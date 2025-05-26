@@ -1,0 +1,50 @@
+{
+  "name": "ea-sbc-rating-calculator",
+  "version": "1.0.0",
+  "description": "A JavaScript library for calculating Squad Building Challenge (SBC) team ratings and finding optimal squad configurations for EA Sports games",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build",
+    "dev": "rollup -c -w"
+  },
+  "keywords": [
+    "ea-sports",
+    "fifa",
+    "fc24",
+    "fc25",
+    "sbc",
+    "squad-building-challenge",
+    "rating-calculator",
+    "gaming",
+    "football",
+    "soccer"
+  ],
+  "author": "Lukasz Kuklis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lkuklis/ea-sbc-rating-calculator"
+  },
+  "bugs": {
+    "url": "https://github.com/lkuklis/ea-sbc-rating-calculator/issues"
+  },
+  "homepage": "https://github.com/lkuklis/ea-sbc-rating-calculator/blob/main/README.md",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/jest": "^29.5.8",
+    "jest": "^29.7.0",
+    "rollup": "^4.6.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
