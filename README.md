@@ -135,7 +135,7 @@ Find solutions using comprehensive search (flexible).
 ### `findMostEfficientSolutions(options)`
 Find solutions sorted by rating efficiency.
 
-For complete API documentation, see the [GitHub repository](https://github.com/yourusername/ea-sbc-rating-calculator).
+For complete API documentation, see the [GitHub repository](https://github.com/lkuklis/ea-sbc-squad-calculator).
 
 ## 🤝 Contributing
 
