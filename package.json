@@ -1,6 +1,6 @@
 {
   "name": "ea-sbc-rating-calculator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript library for calculating Squad Building Challenge (SBC) team ratings and finding optimal squad configurations for EA Sports games",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
