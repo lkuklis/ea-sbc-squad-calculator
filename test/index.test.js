@@ -45,7 +45,7 @@ describe('SBCRatingCalculator', () => {
                 expect(calculator.calculateTeamRating([90, 90])).toBe(29);
             });
 
-            test('should calculate rating for verified EA examples', () => {
+            test('should calculate rating for verified examples', () => {
                 expect(calculator.calculateTeamRating([85, 86, 87, 96])).toBe(52);
                 expect(calculator.calculateTeamRating([95, 92, 94, 93, 93, 93, 92])).toBe(80);
             });
@@ -216,7 +216,7 @@ describe('SolverHelper', () => {
     });
 
     describe('getRating', () => {
-        test('should calculate rating with EA formula', () => {
+        test('should calculate rating', () => {
             const ratings = [85, 87, 83, 86, 84];
             const result = SolverHelper.getRating(ratings);
             expect(result).toBe(59);

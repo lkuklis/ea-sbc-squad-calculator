@@ -2,7 +2,7 @@ const { SolverHelper } = require('./SolverHelper.js');
 const { getOptimalCombinations, isCombinationPossible, combinationToArray, calculateCombinationPoints } = require('./OptimalCombinations.js');
 
 /**
- * SBC Rating Calculator - A comprehensive library for EA Sports Squad Building Challenges
+ * SBC Rating Calculator - A comprehensive library for Squad Building Challenges
  */
 class SBCRatingCalculator {
     constructor(options = {}) {
@@ -12,7 +12,7 @@ class SBCRatingCalculator {
 
     /**
      * Calculate the team rating based on individual player ratings
-     * EA always calculates as if there are 11 players, padding missing slots with 0
+     * Always calculates as if there are 11 players, padding missing slots with 0
      * @param {number[]} ratings - Array of player ratings
      * @returns {number} - Calculated team rating
      */
@@ -178,7 +178,6 @@ class SBCRatingCalculator {
      * @returns {number} - Minimum rating needed for each remaining player
      */
     calculateMinimumRatingNeeded(targetRating, existingRatings, remainingSlots, squadSize = 11) {
-        // Since EA always calculates for 11 players, we use 11 regardless
         const currentSum = existingRatings.reduce((sum, rating) => sum + rating, 0);
         const targetSum = targetRating * 11; // Always 11 for EA
         const remainingSum = targetSum - currentSum;
@@ -189,7 +188,7 @@ class SBCRatingCalculator {
      * Validate if a squad configuration can achieve the target rating
      * @param {number[]} ratings - All player ratings in the squad
      * @param {number} targetRating - Desired team rating
-     * @param {number} squadSize - Total squad size (default: 11, but EA always uses 11)
+     * @param {number} squadSize - Total squad size (default: 11)
      * @returns {Object} - Validation result with success status and actual rating
      */
     validateSquad(ratings, targetRating, squadSize = 11) {

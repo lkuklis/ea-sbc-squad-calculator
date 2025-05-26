@@ -33,8 +33,8 @@ class SolverHelper {
     }
 
     /**
-     * Calculate team rating using EA Sports rating formula
-     * IMPORTANT: EA always calculates squad rating as if there are 11 players total,
+     * Calculate team rating
+     * IMPORTANT: Always calculates squad rating as if there are 11 players total,
      * padding missing slots with 0 rating.
      * @param {number[]} ratings - Array of individual player ratings
      * @returns {number} - Calculated team rating (floored)
@@ -42,7 +42,6 @@ class SolverHelper {
     static getRating(ratings) {
         if (!ratings || ratings.length === 0) return 0;
         
-        // EA always calculates as if there are 11 players - pad with zeros
         const paddedRatings = [...ratings];
         while (paddedRatings.length < 11) {
             paddedRatings.push(0);

@@ -1,13 +1,13 @@
-# EA SBC Rating Calculator
+# SBC Rating Calculator
 
 [![npm version](https://badge.fury.io/js/ea-sbc-rating-calculator.svg)](https://badge.fury.io/js/ea-sbc-rating-calculator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A comprehensive JavaScript library for calculating Squad Building Challenge (SBC) team ratings and finding optimal squad configurations for EA Sports games like FC2x/FIFA.
+A comprehensive JavaScript library for calculating Squad Building Challenge (SBC) team ratings and finding optimal squad configurations for UT mode game of FC2x.
 
 ## 🚀 Features
 
-- **Accurate EA Sports Rating Formula** - Uses the exact rating calculation 
+- **Accurate Rating Formula** - Uses the exact rating calculation 
 - **Optimal SBC Solutions** - Pre-calculated combinations for ratings 80-92
 - **Large Inventory Support** - Efficiently handles 150-1000+ player cards
 - **Chrome Extension Ready** - Perfect for browser environments
@@ -26,7 +26,7 @@ const { SBCRatingCalculator } = require('ea-sbc-rating-calculator');
 
 const calculator = new SBCRatingCalculator();
 
-// Calculate team rating (EA Sports formula)
+// Calculate team rating
 const teamRating = calculator.calculateTeamRating([85, 87, 83, 86, 84, 88, 82, 85, 86, 84, 87]);
 console.log('Team Rating:', teamRating); // 85
 
@@ -119,12 +119,12 @@ function solveSBC(targetRating, clubCards, marketPrices) {
 
 - **Optimal Combinations**: Ratings 80-92 (most common SBC requirements)
 - **Full Calculation**: Any rating 45-99
-- **EA Sports Accurate**: Matches game behavior exactly
+- **Accurate**: Matches game behavior exactly
 
 ## 📖 API Reference
 
 ### `calculateTeamRating(ratings)`
-Calculate team rating using EA Sports formula.
+Calculate team rating.
 
 ### `findOptimalSolutions(options)`
 Find optimal solutions using pre-calculated combinations (fast).
@@ -144,12 +144,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📄 License
 
 This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- EA Sports for creating the Squad Building Challenge system
-- The FIFA/FC community for sharing SBC strategies
-- All contributors and users of this library
 
 ---
 

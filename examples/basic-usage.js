@@ -1,4 +1,4 @@
-// Example usage of EA SBC Rating Calculator
+// Example usage of SBC Rating Calculator
 const { SBCRatingCalculator } = require('../src/index.js');
 
 // Create calculator instance
@@ -7,7 +7,7 @@ const calculator = new SBCRatingCalculator({
     defaultMaxSolutions: 20
 });
 
-console.log('=== EA SBC Rating Calculator Examples ===\n');
+console.log('=== SBC Rating Calculator Examples ===\n');
 
 // Example 1: Calculate team rating
 console.log('1. Calculate Team Rating:');
